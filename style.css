@@ -1,21 +1,23 @@
+/* Color Palette & Base Styles */
 :root {
-    --bg-color: #f4efe6;       
-    --card-bg: #e8e0d2;        
-    --text-main: #3d3228;    
-    --text-muted: #736454;      
-    --accent: #8c4a32;        
-    --border-color: #d1c5b4; 
+    --bg-color: #f4efe6;
+    --card-bg: #e8e0d2;
+    --text-main: #3d3228;
+    --text-muted: #736454;
+    --accent: #8c4a32;
+    --border-color: #d1c5b4;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
-    font-family: 'Georgia', 'Times New Roman', serif; 
+    font-family: 'Georgia', 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
+/* Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -26,11 +28,10 @@ body {
 }
 
 .nav-logo {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: var(--text-main);
     text-decoration: none;
-    letter-spacing: 0.05em;
 }
 
 .nav-links a {
@@ -38,53 +39,53 @@ body {
     text-decoration: none;
     margin-left: 1.5rem;
     font-size: 0.95rem;
-    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
     color: var(--accent);
 }
 
+/* Layout */
 main {
     max-width: 800px;
     margin: 3rem auto;
     padding: 0 1.5rem;
 }
 
-.simple-page, .hero, .intro, .mission {
+section {
     margin-bottom: 3rem;
 }
 
+/* Typography */
 h1, h2 {
     color: var(--text-main);
     font-weight: normal;
-    letter-spacing: -0.02em;
 }
 
 .eyebrow {
     color: var(--text-muted);
     font-size: 0.8rem;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 
+/* Image Displays */
 .large-image, .hero-image {
     max-width: 550px;
     margin: 2rem auto;
     padding: 0.5rem;
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 4px;
 }
 
 .large-image img, .hero-image img {
     width: 100%;
     height: auto;
     display: block;
-    filter: sepia(15%) contrast(95%);
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
