@@ -1,11 +1,14 @@
-/* Color Palette & Base Styles */
 :root {
-    --bg-color: #f4efe6;
-    --card-bg: #e8e0d2;
-    --text-main: #3d3228;
-    --text-muted: #736454;
-    --accent: #8c4a32;
-    --border-color: #d1c5b4;
+    --bg-color: #f7f1e5;        
+    --card-bg: #eae1d0;        
+    --text-main: #3d3126;    
+    --text-muted: #786652;    
+    --accent: #934c31;        
+    --border-color: #d8cbba;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -17,7 +20,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -39,13 +41,13 @@ body {
     text-decoration: none;
     margin-left: 1.5rem;
     font-size: 0.95rem;
+    transition: color 0.15s ease;
 }
 
 .nav-links a:hover {
     color: var(--accent);
 }
 
-/* Layout */
 main {
     max-width: 800px;
     margin: 3rem auto;
@@ -56,10 +58,10 @@ section {
     margin-bottom: 3rem;
 }
 
-/* Typography */
 h1, h2 {
     color: var(--text-main);
     font-weight: normal;
+    margin-top: 0;
 }
 
 .eyebrow {
@@ -70,7 +72,6 @@ h1, h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Image Displays */
 .large-image, .hero-image {
     max-width: 550px;
     margin: 2rem auto;
@@ -85,7 +86,6 @@ h1, h2 {
     display: block;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
